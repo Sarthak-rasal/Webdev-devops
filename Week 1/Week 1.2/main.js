@@ -29,3 +29,64 @@ for (let i = 0; i <= 1000; i = i + 1) {
   answer = answer + i;
 }
 console.log(answer);
+
+//arrays
+const personArray = ["Harkirat", "Sarthak", "Salu bhau"];
+
+console.log(personArray[0]);
+console.log(personArray[1]);
+console.log(personArray[2]);
+
+const ages = [21, 22, 23, 24, 25, 26, 27, 28];
+
+for (let i = 0; i < ages.length; i++) {
+  if (ages[i] % 2 == 0) {
+    console.log("Even numbers are : " + ages[i]);
+  }
+}
+
+const genderArray = ["Male", "Male", "Female"];
+
+console.log("All the males from the given array are :");
+for (let i = 0; i < genderArray.length; i++) {
+  if (genderArray[i] == "Male") {
+    console.log(personArray[i]);
+  }
+}
+
+// Using objects
+
+const users1 = {
+  firsttName: "Harkirat",
+  genderr: "male",
+};
+
+console.log(users1["firsttName"]);
+
+const allUsers = [
+  {
+    firstNname: "Harkirat",
+    gendeer: "male",
+  },
+  {
+    firstNname: "Sarthak",
+    gendeer: "male",
+    metadata: {
+      age: "21",
+      address: "WTFF",
+    },
+  },
+  {
+    firstNname: "Priya",
+    gender: "female",
+  },
+];
+
+console.log("We are creating objects now :");
+for (let i = 0; i < allUsers.length; i++) {
+  if (allUsers[i]["gendeer"] == "male") {
+    console.log(allUsers[i]["firstNname"]);
+  }
+}
+console.log("Now printing triple nested objects");
+console.log(allUsers[1]["metadata"]["age"]);
