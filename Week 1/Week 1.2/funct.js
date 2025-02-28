@@ -19,3 +19,4 @@ function displayResultPassive(data) {
 }
 
 const anss = sum(1, 2, displayResult);
+// callbacks
