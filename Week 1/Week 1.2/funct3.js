@@ -8,3 +8,4 @@ function greetAlien() {
 //setTimeout // function , time in milliseconds(it will take the set amount of time)
 setTimeout(greet, 1 * 1000);
 setInterval(greetAlien, 4 * 1000);
+//these are examples for callback functions
